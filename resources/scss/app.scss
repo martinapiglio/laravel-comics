@@ -139,3 +139,40 @@ main {
     }
 
 }
+
+#buy-comics-section {
+
+    height: 8rem;
+    color: white;
+    background-color: $skyblue;
+
+    * {
+        height: 100%;
+    }
+
+    .container {
+
+        ul {
+            @include centerFlex();
+        }
+    
+        li {
+            @include centerFlex();
+            justify-content: flex-start;
+            gap: .5em;
+    
+            font-size: 13px;
+            text-transform: uppercase;
+    
+            img {
+                height: 35%;
+            }
+
+        }
+
+        li:last-child img {
+            width: 25%;
+        }
+    }
+
+}

@@ -24,6 +24,8 @@
 
     @yield('main')
 
+    @yield('buy-comics')
+
     @include('partials/footer')
 
 </body>

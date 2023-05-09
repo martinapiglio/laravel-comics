@@ -33,6 +33,23 @@
 
 @endsection
 
+@section('buy-comics')
+
+    <section id="buy-comics-section">
+        <div class="container">
+            <ul>
+                @foreach($buyComicsLinks as $buyComic)
+                    <li>
+                        <img src=" {{ Vite::asset($buyComic['icon']) }} " alt="">
+                        {{ $buyComic['title'] }} 
+                    </li>
+                @endforeach
+            </ul>
+        </div>
+    </section>
+
+@endsection
+
 </body>
 
 </html>
