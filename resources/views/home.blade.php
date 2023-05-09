@@ -49,7 +49,3 @@
     </section>
 
 @endsection
-
-</body>
-
-</html>

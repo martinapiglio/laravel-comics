@@ -18,7 +18,7 @@
             <ul class="mb-0">
                 @foreach ($links as $link)
                 <li>
-                    <span>{{ $link }}</span>    
+                    <a href="{{ $link }}">{{ $link }}</a>    
                 </li>        
                 @endforeach
             </ul>
