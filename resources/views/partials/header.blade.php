@@ -15,7 +15,7 @@
 
         <div id="header-center">
 
-            <ul>
+            <ul class="mb-0">
                 @foreach ($links as $link)
                 <li>
                     <span>{{ $link }}</span>    

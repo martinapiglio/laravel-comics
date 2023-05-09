@@ -6,11 +6,7 @@
 
 header {
 
-    height: 6rem;
-
     #header-top {
-        height: 1rem;
-        
         font-weight: bold;
         font-size: 10px;
         text-align: right;
@@ -57,7 +53,6 @@ header {
             }
 
             li {
-                display: block;
                 border-bottom: 4px solid transparent;
 
                 transition: 0.1s;
