@@ -2,8 +2,8 @@
 
     <div id="header-top">
         <div class="container container-top">
-            <a href="#">dc power visa</a>
-            <a href="#">additional dc sites</a>
+            <a href="#">dc power visa&#8480;</a>
+            <a href="#">additional dc sites&reg;</a>
         </div>
     </div>
 
@@ -25,9 +25,9 @@
 
         </div>
 
-        {{-- <div id="header-right">
+        <div id="header-right">
             <input type="text" placeholder="Search">
-        </div> --}}
+        </div> 
 
     </div>
 </header>

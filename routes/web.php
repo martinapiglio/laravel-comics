@@ -18,16 +18,16 @@ Route::get('/', function () {
     $comics = config('comics');
     //header links
     $links = [
-        'characters' => 'characters',
-        'comics' => 'comics',
-        'movies' => 'movies',
-        'tv' => 'tv',
-        'games' => 'games',
-        'collectibles' => 'collectibles',
-        'videos' => 'videos',
-        'fans' => 'fans',
-        'news' => 'news',
-        'shop' => 'shop'
+        'characters',
+        'comics',
+        'movies',
+        'tv',
+        'games',
+        'collectibles',
+        'videos',
+        'fans',
+        'news',
+        'shop'
     ];
 
     return view('home', compact('comics', 'links'));
