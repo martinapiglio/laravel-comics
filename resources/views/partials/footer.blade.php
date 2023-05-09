@@ -41,11 +41,11 @@
     
             <div id="footer-bottom-right">
                 <span class="text">FOLLOW US</span>
-                @foreach ($icons as $icon)
-                    <div class="icons">
-                        <img src=" {{ Vite::asset($icon) }} " alt="">                
-                    </div>
-                @endforeach
+                    @foreach ($icons as $icon)
+                        <div class="icons">
+                            <img src=" {{ Vite::asset($icon) }} " alt="">                
+                        </div>
+                    @endforeach
             </div>
     
         </div>

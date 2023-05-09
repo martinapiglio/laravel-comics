@@ -1,7 +1,7 @@
 <header>
 
     <div id="header-top">
-        <div class="container container-top">
+        <div class="container">
             <a href="#">dc power visa&#8480;</a>
             <a href="#">additional dc sites&reg;</a>
         </div>
@@ -15,7 +15,7 @@
 
         <div id="header-center">
 
-            <ul class="mb-0">
+            <ul>
                 @foreach ($links as $link)
                 <li>
                     <a href="{{ $link }}">{{ $link }}</a>    

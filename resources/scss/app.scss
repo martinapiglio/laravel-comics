@@ -3,6 +3,15 @@
 @import '~bootstrap/scss/bootstrap';
 @import "node_modules/font-awesome/scss/font-awesome.scss";
 
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    list-style-type: none;
+}
+
 
 header {
 
@@ -15,8 +24,7 @@ header {
 
         a {
             color: white;
-            text-decoration: none;
-
+            
             &:nth-child(2) {
                 padding-left: 2rem;
             }
@@ -53,8 +61,10 @@ header {
 
             li {
                 border-bottom: 4px solid transparent;
-
                 transition: 0.1s;
+                a {
+                    color: black;
+                }
             }
 
             li:hover {
@@ -65,7 +75,7 @@ header {
         } 
 
         #header-right {
-            padding: 1.8rem;
+            padding: 1.8rem 0;
         }
 
     }
@@ -141,7 +151,6 @@ main {
 }
 
 #buy-comics-section {
-
     height: 8rem;
     color: white;
     background-color: $skyblue;
@@ -180,24 +189,20 @@ main {
 footer {
 
     #footer-top {
-
         background-image: url("../img/footer-bg.jpg");
         background-repeat: no-repeat;
         background-size: cover;
     
         .container {
-    
             position: relative;
             overflow-y: hidden;
     
             height: 380px;
     
             #footer-center-links {
-    
                 display: flex;
                 flex-flow: column wrap;
                 align-content: flex-start;
-                
                 gap: 1rem;
     
                 height: 100%;
@@ -207,17 +212,15 @@ footer {
     
                     h2 {
                         padding-bottom: .5rem;
-                        font-size:large;
+                        font-size: large;
                         text-transform: uppercase;
                         color: white;
                     }
     
                     ul {
-                        list-style-type: none;
                         padding: 0;
     
                         li a {
-                            text-decoration: none;
                             font-size: smaller;
                             color: $lighter-gray;
         
@@ -229,7 +232,6 @@ footer {
                         }
                     }
         
-                    
                 }
     
             }
@@ -251,6 +253,7 @@ footer {
         background-color: $mid-dark-grey;
 
         .container{
+
             @include centerFlex();
     
             padding: 1.5rem;
@@ -296,6 +299,5 @@ footer {
             }
         }
     }
-
 
 }
