@@ -12,6 +12,7 @@
 
     <!-- Styles -->
     @vite('resources/js/app.js')
+    <link rel="stylesheet" href=" {{ asset('scss/app.scss') }} ">
 
 </head>
 

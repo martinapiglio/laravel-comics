@@ -16,6 +16,19 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     // config() used to access comics.php file in config directory
     $comics = config('comics');
+    //header links
+    $links = [
+        'characters' => 'characters',
+        'comics' => 'comics',
+        'movies' => 'movies',
+        'tv' => 'tv',
+        'games' => 'games',
+        'collectibles' => 'collectibles',
+        'videos' => 'videos',
+        'fans' => 'fans',
+        'news' => 'news',
+        'shop' => 'shop'
+    ];
 
-    return view('home', compact('comics'));
+    return view('home', compact('comics', 'links'));
 })->name('home');

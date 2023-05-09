@@ -1,1 +1,76 @@
+@use '_mixins.scss' as *;
+@use '_variables.scss' as *;
 @import '~bootstrap/scss/bootstrap';
+@import "node_modules/font-awesome/scss/font-awesome.scss";
+
+
+header {
+
+    height: 6rem;
+
+    #header-top {
+        height: 1rem;
+        
+        font-weight: bold;
+        font-size: 10px;
+        text-align: right;
+        text-transform: uppercase;
+        background-color: $skyblue;
+
+        a {
+            color: white;
+            text-decoration: none;
+
+            &:nth-child(2) {
+            
+                padding-left: 3rem;
+            }
+        }
+
+    }
+    
+    .container-btm {
+        @include centerFlex();
+        
+        height: 5rem;
+        
+        * {
+            @include centerFlex();
+            height: 100%;
+        }
+
+        #header-left {
+            padding: .8rem 0;
+
+            img {
+                cursor: pointer;
+            }
+        }
+
+        #header-center {
+
+            ul {
+                gap: 2rem;
+                font-weight: bold;
+                font-size: 12px;
+                text-transform: uppercase;
+            }
+
+            li {
+                display: block;
+                border-bottom: 4px solid transparent;
+
+                transition: 0.1s;
+            }
+
+            li:hover {
+                border-bottom: 4px solid $skyblue;
+                cursor: pointer;
+            }
+
+        } 
+
+
+
+    }
+}
