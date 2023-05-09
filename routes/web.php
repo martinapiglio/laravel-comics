@@ -29,7 +29,7 @@ Route::get('/', function () {
         'news',
         'shop'
     ];
-    //buy-comics 
+    //buy-comics links
     $buyComicsLinks = [
         [
             'icon' => 'resources/img/buy-comics-digital-comics.png',
@@ -51,7 +51,62 @@ Route::get('/', function () {
             'icon' => 'resources/img/buy-dc-power-visa.svg',
             'title' => 'dc power visa'
         ]
-        ];
+    ];
+    //footer links
+    $footerLinks = [
+        [
+            'title' => 'dc comics',
+            'links' => [
+                'Characters',
+                'Movies',
+                'TV',
+                'Games',
+                'Videos',
+                'News'
+            ]
+        ],
+        [
+            'title' => 'shop',
+            'links' => [
+                'Shop DC',
+                'Shop DC Collectibles'
+            ]
+        ],
+        [
+            'title' => 'DC',
+            'links' => [
+                'Terms Of Use',
+                'Privacy policy (New)',
+                'Ad Choices',
+                'Advertising',
+                'Jobs',
+                'Subscriptions',
+                'Talent Workshops',
+                'CPSC Certificates',
+                'Ratings',
+                'Shop Help',
+                'Contact Us'
+            ]
+        ],
+        [
+            'title' => 'sites',
+            'links' => [
+                'DC',
+                'MAD Magazine',
+                'DC Kids',
+                'DC Universe',
+                'DC Power Visa'
+            ]
+        ]
+    ];
+    //footer icons
+    $icons = [
+        'resources/img/footer-facebook.png',
+        'resources/img/footer-twitter.png',
+        'resources/img/footer-youtube.png',
+        'resources/img/footer-pinterest.png',
+        'resources/img/footer-periscope.png',
+    ];
 
-    return view('home', compact('comics', 'links', 'buyComicsLinks'));
+    return view('home', compact('comics', 'links', 'buyComicsLinks', 'footerLinks', 'icons'));
 })->name('home');
